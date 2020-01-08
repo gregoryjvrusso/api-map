@@ -43,6 +43,7 @@ const ContainerHeader = ({ setData }) => {
       fetchData(`https://viacep.com.br/ws/${cepCheck}/json/`)
     } else {
       setMessage(true)
+      setData('')
     }
   }
   return (
