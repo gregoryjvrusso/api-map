@@ -14,26 +14,44 @@ const ContainerHeaderElements = styled.div`
 const TitleHeader = styled.p`
   font-weight: bold;
 `
+const MessageError = styled.p`
+  color: red;
+  margin: 0;
+`
 const ContainerHeader = ({ setData }) => {
   const [cep, setCep] = useState('')
-  const [state, setState] = useState(false)
+  const [message, setMessage] = useState(false)
   const fetchData = async (url) => {
     try {
       const result = await axios(url)
-      setData(result.data)
+      if (result.data.erro) {
+        setData('')
+        setMessage(true)
+      } else {
+        setData(result.data)
+        setMessage(false)
+      }
     } catch (error) {
       console.log(error)
     }
   }
 
+  const validatorCep = (cep) => {
+    const regex = RegExp(/^\d{5}-\d{3}$/)
+    if (regex.test(cep)) {
+      let cepCheck = cep.replace('-', '')
+      fetchData(`https://viacep.com.br/ws/${cepCheck}/json/`)
+    } else {
+      setMessage(true)
+    }
+  }
   return (
     <ContainerHeaderElements>
       <TitleHeader>Consultar</TitleHeader>
-
+      {message && <MessageError>Cep inválido</MessageError>}
       <form onSubmit={e => {
         e.preventDefault()
-        let cepCheck = cep.replace('-', '')
-        fetchData(`https://viacep.com.br/ws/${cepCheck}/json/`)
+        validatorCep(cep)
       }}>
         <Label htmlFor='cep'>
           CEP
@@ -43,6 +61,7 @@ const ContainerHeader = ({ setData }) => {
           name='cep'
           value={cep}
           onChange={(e) => {
+            setMessage(false)
             setCep(e.target.value)
           }}
           id='cep'

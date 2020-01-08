@@ -1,23 +1,19 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import styled, { css } from 'styled-components'
 import InputMask from 'react-input-mask';
-import { theme, ifProp } from 'styled-tools'
+import { theme } from 'styled-tools'
 import { width } from 'styled-system'
 
-const warning = css`
-    color: ${p => p.theme.colors.texts.warning};
-`
-
 const Input = styled(InputMask)`
-    padding: 5px;
-    ${width}
-    margin: 8px 0px;
-    box-sizing: border-box; 
-    color: ${theme('color')};
-    ${ifProp('warning', warning)}
+  padding: 5px;
+  ${width}
+  margin: 8px 0px;
+  box-sizing: border-box; 
+  color: ${theme('color')};
 `
 
 const InputCEP = (props) => {
   return <Input {...props}  mask="99999-999" maskChar="" />
 }
+
 export default InputCEP

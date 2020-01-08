@@ -14,7 +14,7 @@ const App = () => {
     >
       <React.Fragment>
           <ContainerHeader setData={setData} />
-          {data !== '' && <ContainerMaps data={data} />}
+          {data !== '' && <ContainerMaps data={data} setData={setData} />}
       </React.Fragment>
     </ThemeProvider>
   )

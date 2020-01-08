@@ -1,17 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
-
-const mapStyles = {
-    width: '90%',
-    height: '70%'
-};
 
 const GoogleMaps = ({ latMap, lngMap }) => {
     return (
         <Map
             google={window.google}
             zoom={18}
-            style={mapStyles}
+            style={{width: '95%', height: '50%', position: 'relative'}}
             initialCenter={{ lat: latMap, lng: lngMap }}
             center={{ lat: latMap, lng: lngMap }}
         >

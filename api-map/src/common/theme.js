@@ -7,18 +7,13 @@ export default {
   space,
   colors: {
     texts: {
-      primary: '#00306e',
-      warning: '#8c1000'
+      primary: '#00306e'
     },
     backgrounds: {
       primary: {
         gray: '#e5e5e5',
-        blue: '#4eb0de',
-        hover: '#46e0d0'
-      },
-      warning: {
-        none: '#d42c2c',
-        hover: '#ff5757'
+        grayDark: '#7d7d7d',
+        blue: '#4eb0de'
       }
     }
   }
