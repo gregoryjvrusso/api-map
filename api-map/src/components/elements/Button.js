@@ -1,21 +1,10 @@
 import styled, { css } from 'styled-components'
 import { ifProp } from 'styled-tools'
+import { width } from 'styled-system'
 
-const warning = css`
-  background-color: ${p => p.theme.colors.backgrounds.warning.none};
-  border-color: ${p => p.theme.colors.backgrounds.warning.none}
-
-  :hover{
-    border-color: ${p => p.theme.colors.backgrounds.warning.hover}
-  }
-`
 const primary = css`
   background-color: ${p => p.theme.colors.backgrounds.primary.blue};
-  border-color: ${p => p.theme.colors.backgrounds.primary.blue}
-
-  :hover{
-    border-color: ${p => p.theme.colors.backgrounds.primary.hover}
-  }
+  border: 0px;
 `
 
 const Button = styled.button`
@@ -26,8 +15,8 @@ const Button = styled.button`
   border-radius: 3px;
   font-weight: bold;
   color: #FFFFFF;
-  ${ifProp('warning', warning)}
   ${ifProp('primary', primary)}
+  ${width}
 `
 
 export default Button

@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import styled, { css } from 'styled-components'
 import InputMask from 'react-input-mask';
 import { theme, ifProp } from 'styled-tools'
+import { width } from 'styled-system'
 
 const warning = css`
     color: ${p => p.theme.colors.texts.warning};
@@ -9,6 +10,7 @@ const warning = css`
 
 const Input = styled(InputMask)`
     padding: 5px;
+    ${width}
     margin: 8px 0px;
     box-sizing: border-box; 
     color: ${theme('color')};

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 import ContainerHeader from '../components/modules/ContainerHeader'
 import ContainerMaps from '../components/modules/ContainerMaps'
 
@@ -12,8 +13,8 @@ const App = () => {
       theme={theme}
     >
       <React.Fragment>
-        <ContainerHeader setData={setData} />
-        {data !== '' && <ContainerMaps data={data}/>}
+          <ContainerHeader setData={setData} />
+          {data !== '' && <ContainerMaps data={data} />}
       </React.Fragment>
     </ThemeProvider>
   )

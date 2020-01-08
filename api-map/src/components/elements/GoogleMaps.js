@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 
 const mapStyles = {
-    width: '50%',
-    height: '50%',
+    width: '90%',
+    height: '70%'
 };
 
 const GoogleMaps = ({ latMap, lngMap }) => {

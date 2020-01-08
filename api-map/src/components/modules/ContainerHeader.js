@@ -6,13 +6,18 @@ import InputCEP from '../elements/InputCEP'
 import Label from '../elements/Label'
 
 const ContainerHeaderElements = styled.div`
-    background-color: ${p => p.theme.colors.backgrounds.primary.gray};
+  background-color: ${p => p.theme.colors.backgrounds.primary.gray};
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+`
+const TitleHeader = styled.p`
+  font-weight: bold;
 `
 const ContainerHeader = ({ setData }) => {
   const [cep, setCep] = useState('')
   const [state, setState] = useState(false)
   const fetchData = async (url) => {
-    console.log(url)
     try {
       const result = await axios(url)
       setData(result.data)
@@ -23,6 +28,8 @@ const ContainerHeader = ({ setData }) => {
 
   return (
     <ContainerHeaderElements>
+      <TitleHeader>Consultar</TitleHeader>
+
       <form onSubmit={e => {
         e.preventDefault()
         let cepCheck = cep.replace('-', '')
@@ -32,6 +39,7 @@ const ContainerHeader = ({ setData }) => {
           CEP
         </Label>
         <InputCEP
+          width={['70%', '15em', '15em']}
           name='cep'
           value={cep}
           onChange={(e) => {
@@ -41,7 +49,7 @@ const ContainerHeader = ({ setData }) => {
           type='text'
           placeholder='02250-250'
         />
-        <Button type='submit' primary>
+        <Button width={['95%', '8em', '8em']} type='submit' primary>
           Buscar
         </Button>
       </form>
