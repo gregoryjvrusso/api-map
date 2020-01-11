@@ -1,5 +1,5 @@
 import React from 'react'
-import renderer from 'react-test-renderer';
+import renderer from 'react-test-renderer'
 import Label from './Label.js'
 
 describe('Label component', () => {
@@ -7,6 +7,6 @@ describe('Label component', () => {
     const render = renderer
     .create(<Label />)
     .toJSON();
-    expect(render).toMatchSnapshot();
+    expect(render).toMatchSnapshot()
   })
 })

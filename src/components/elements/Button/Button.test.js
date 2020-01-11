@@ -1,11 +1,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import GoogleMaps from './GoogleMaps.js'
+import Button from './Button.js'
 
-describe('GoogleMaps component', () => {
+describe('Button component', () => {
   it('deve conseguir renderizar [snapshot]', async () => {
     const render = renderer
-    .create(<GoogleMaps latMap='-24.0252206' lngMap='-46.4931331,17' />)
+    .create(<Button />)
     .toJSON()
     expect(render).toMatchSnapshot()
   })
