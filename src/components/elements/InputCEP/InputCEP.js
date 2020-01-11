@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import InputMask from 'react-input-mask';
 import { theme } from 'styled-tools'
 import { width } from 'styled-system'

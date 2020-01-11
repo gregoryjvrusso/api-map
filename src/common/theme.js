@@ -9,7 +9,9 @@ export default {
   fontFamily,
   colors: {
     texts: {
-      primary: '#00306e'
+      primary: '#000000',
+      warning: '#ed3737',
+      white: '#FFFFFF'
     },
     backgrounds: {
       primary: {

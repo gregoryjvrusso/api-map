@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import GoogleMaps from '../elements/GoogleMaps'
+import GoogleMaps from '../elements/GoogleMaps/GoogleMaps'
 import { geoCodeGenerator } from '../helpers/geocode'
 import styled from 'styled-components'
+import Text from '../elements/Text/Text'
 
 const Container = styled.div`
   margin-top: 1em;
@@ -24,15 +25,7 @@ const Close = styled.p`
 const ContainerTitle = styled.div`
   min-width: 80%;
 `
-const Title = styled.p`
-  font-size: 2em;
-  font-weight: bold;
-  margin: 0;
-`
-const Text = styled.p`
-  font-size: 1em;
-  margin: 0em 0.5em;
-`
+
 const ContainerMaps = ({ data, setData }) => {
   const [latMap, setLat] = useState('')
   const [lngMap, setLng] = useState('')
@@ -48,7 +41,12 @@ const ContainerMaps = ({ data, setData }) => {
     <Container>
       <HeaderContainer>
         <ContainerTitle>
-          <Title>{data.logradouro}</Title>
+          <Text 
+            text={data.logradouro} 
+            fontSize='2em'
+            fontWeight='bold'
+            margin='0'
+          />
         </ContainerTitle>
         <CloseContainer>
           <Close onClick={closeMap}>
@@ -56,9 +54,9 @@ const ContainerMaps = ({ data, setData }) => {
           </Close>
         </CloseContainer>
       </HeaderContainer>
-      <Text>{data.bairro}</Text>
-      <Text>{`${data.localidade}-${data.uf}`}</Text>
-      <Text>{data.cep}</Text>
+      <Text text={data.bairro} margin='0' />
+      <Text text={`${data.localidade}-${data.uf}`} margin='0' />
+      <Text text={data.cep} margin='0 0 1em' />
       {lngMap !== '' && latMap !== '' &&
         <GoogleMaps
           latMap={latMap}
