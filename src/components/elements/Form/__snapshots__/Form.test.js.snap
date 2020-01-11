@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component deve conseguir renderizar [snapshot] 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <label
+    className="sc-bdVaJa FTQhB"
+    htmlFor="cep"
+  >
+    CEP
+  </label>
+  <input
+    className="sc-bwzfXH fRVSPy"
+    data-testid="form-input"
+    id="cep"
+    name="cep"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onPaste={[Function]}
+    placeholder="02250-250"
+    type="text"
+    width={
+      Array [
+        "70%",
+        "15em",
+        "15em",
+      ]
+    }
+  />
+  <button
+    className="sc-htpNat irRmst"
+    data-testid="form-buttons"
+    type="submit"
+    width={
+      Array [
+        "95%",
+        "8em",
+        "8em",
+      ]
+    }
+  >
+    Buscar
+  </button>
+</form>
+`;

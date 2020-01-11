@@ -48,13 +48,15 @@ const Form = ({ setCep, setData, setMessage, cep }) => {
         id='cep'
         type='text'
         placeholder='02250-250'
+        data-testid='form-input'
       />
       <Button 
+        data-testid='form-buttons'
         width={['95%', '8em', '8em']} 
         type='submit' 
       >
         Buscar
-            </Button>
+      </Button>
     </form>
   )
 }
