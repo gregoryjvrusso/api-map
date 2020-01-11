@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import InputMask from 'react-input-mask';
-import { theme } from 'styled-tools'
 import { width } from 'styled-system'
 
 const Input = styled(InputMask)`
@@ -9,7 +8,6 @@ const Input = styled(InputMask)`
   ${width}
   margin: 8px 0px;
   box-sizing: border-box; 
-  color: ${theme('color')};
 `
 
 const InputCEP = (props) => {

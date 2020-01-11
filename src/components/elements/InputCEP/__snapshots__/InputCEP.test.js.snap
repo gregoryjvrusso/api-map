@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputCEP component deve conseguir renderizar [snapshot] 1`] = `
+<input
+  className="sc-bdVaJa fUlNye"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onPaste={[Function]}
+/>
+`;
+
+exports[`InputCEP component deve conseguir renderizar [snapshot] com width de 80 px 1`] = `
+<input
+  className="sc-bdVaJa dfgRgk"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onPaste={[Function]}
+  width="80px"
+/>
+`;

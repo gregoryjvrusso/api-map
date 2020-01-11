@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import GoogleMaps from '../elements/GoogleMaps/GoogleMaps'
-import { geoCodeGenerator } from '../helpers/geocode'
 import styled from 'styled-components'
+import { theme } from 'styled-tools'
+import GoogleMaps from '../elements/GoogleMaps/GoogleMaps'
 import Text from '../elements/Text/Text'
+import { geoCodeGenerator } from '../helpers/geocode'
 
 const Container = styled.div`
   margin-top: 1em;
@@ -18,7 +19,7 @@ const Close = styled.p`
   font-size: 1.5em;
   font-weight: bold;
   text-align: right;
-  color: ${p => p.theme.colors.backgrounds.primary.grayDark};
+  color: ${theme('colors.backgrounds.primary.grayDark')};
   margin-top: 0;
   cursor: pointer;
 `
@@ -41,8 +42,8 @@ const ContainerMaps = ({ data, setData }) => {
     <Container>
       <HeaderContainer>
         <ContainerTitle>
-          <Text 
-            text={data.logradouro} 
+          <Text
+            text={data.logradouro}
             fontSize='2em'
             fontWeight='bold'
             margin='0'

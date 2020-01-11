@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { theme } from 'styled-tools'
 import Form from '../elements/Form/Form'
 import Text from '../elements/Text/Text'
 
 const ContainerHeaderElements = styled.div`
-  background-color: ${p => p.theme.colors.backgrounds.primary.gray};
+  background-color: ${theme('colors.backgrounds.primary.gray')};
   display: flex;
   flex-direction: column;
   padding: 0.5em;

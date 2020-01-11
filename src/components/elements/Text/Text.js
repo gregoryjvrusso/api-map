@@ -1,14 +1,14 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { ifProp } from 'styled-tools'
+import { ifProp, theme } from 'styled-tools'
 import { fontSize, fontWeight, margin } from 'styled-system'
 
 const warning = css`
-  color: ${p => p.theme.colors.texts.warning};
+  color: ${theme('colors.texts.warning')};
   margin: 0;
 `
 const Text = styled.p`
-  color: ${p => p.theme.colors.texts.primary};
+  color: ${theme('colors.texts.primary')};
   ${fontSize}
   ${fontWeight}
   ${margin}
