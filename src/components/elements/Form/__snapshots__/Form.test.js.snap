@@ -12,7 +12,6 @@ exports[`Form component deve conseguir renderizar [snapshot] 1`] = `
   </label>
   <input
     className="sc-bwzfXH fRVSPy"
-    data-testid="form-input"
     id="cep"
     name="cep"
     onBlur={[Function]}
@@ -32,7 +31,6 @@ exports[`Form component deve conseguir renderizar [snapshot] 1`] = `
   />
   <button
     className="sc-htpNat irRmst"
-    data-testid="form-buttons"
     type="submit"
     width={
       Array [

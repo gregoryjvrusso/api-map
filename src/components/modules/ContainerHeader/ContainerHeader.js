@@ -22,7 +22,7 @@ const ContainerHeader = ({ setData }) => {
         tag={'h1'}
         fontSize='1em'
       />
-      {message && <Text text={'Cep inválido'} warning />}
+      {message && <Text text={'Cep inválido'} warning margin='0' />}
       <Form
         setCep={setCep}
         setMessage={setMessage}

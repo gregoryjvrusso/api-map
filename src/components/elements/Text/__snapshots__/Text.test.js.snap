@@ -27,7 +27,7 @@ exports[`Text component deve conseguir renderizar [snapshot] como tag H1 e fontS
 
 exports[`Text component deve conseguir renderizar [snapshot] como warning 1`] = `
 <p
-  className="sc-bdVaJa heiBPz"
+  className="sc-bdVaJa irvhcf"
 >
   Texto de teste
 </p>

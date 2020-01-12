@@ -5,7 +5,6 @@ import { fontSize, fontWeight, margin } from 'styled-system'
 
 const warning = css`
   color: ${theme('colors.texts.warning')};
-  margin: 0;
 `
 const Text = styled.p`
   color: ${theme('colors.texts.primary')};
