@@ -22,7 +22,7 @@ Utilizar o site [ApiMap](https://api-map-test.netlify.com/)
 
 ## Realizar testes 
 
-Para realizar os testes deve-se clonar o repositório no seu computador e utilizar os seguintes comandos na ordem:
+Para realizar os testes, deve-se clonar o repositório no seu computador e utilizar os seguintes comandos na ordem:
 
 ```npm install```
 
@@ -32,7 +32,7 @@ Para realizar os testes deve-se clonar o repositório no seu computador e utiliz
 
 ### styled-components
 
-* Utilizou-se por styled components para modular tanto o HTMK dos components quanto o CSS no mesmo local, assim, organizando centralizando todos as responsabilidades do componente no mesmo local, além de poder utilizar `props` para alterar o CSS do componente.
+* Utilizou-se por styled components para modular tanto o HTML dos componentes quanto o CSS no mesmo local, assim, centralizando todas as responsabilidades do componente no mesmo local, além de poder utilizar `props` para alterar o CSS do componente.
 
 ### styled-system
 
