@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container Maps component deve conseguir renderizar [snapshot] 1`] = `
+<div
+  className="sc-htpNat gbqgVN"
+>
+  <div
+    className="sc-bxivhb cDFCAd"
+  >
+    <div
+      className="sc-bwzfXH wqKLy"
+    >
+      <p
+        className="sc-bdVaJa fTxPHd"
+        fontSize="2em"
+        fontWeight="bold"
+      >
+        Praça da Sé
+      </p>
+      <p
+        className="sc-bdVaJa ffYDP"
+      >
+        Sé
+      </p>
+      <p
+        className="sc-bdVaJa ffYDP"
+      >
+        São Paulo-SP
+      </p>
+      <p
+        className="sc-bdVaJa dqUOud"
+      >
+        01001-000
+      </p>
+    </div>
+    <div
+      className="sc-ifAKCX OJlAs"
+    >
+      <svg
+        className="sc-EHOje iOXpbg"
+        onClick={[Function]}
+      >
+        close.svg
+      </svg>
+    </div>
+  </div>
+</div>
+`;

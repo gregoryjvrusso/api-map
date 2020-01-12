@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { theme } from 'styled-tools'
-import Form from '../elements/Form/Form'
-import Text from '../elements/Text/Text'
+import Form from '../../elements/Form/Form'
+import Text from '../../elements/Text/Text'
 
 const ContainerHeaderElements = styled.div`
   background-color: ${theme('colors.backgrounds.primary.gray')};

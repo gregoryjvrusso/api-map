@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { GlobalStyles } from '../common/GlobalStyles'
 import { ThemeProvider } from 'styled-components'
-import ContainerHeader from '../components/modules/ContainerHeader'
-import ContainerMaps from '../components/modules/ContainerMaps'
+import ContainerHeader from '../components/modules/ContainerHeader/ContainerHeader'
+import ContainerMaps from '../components/modules/ContainerMaps/ContainerMaps'
 
 import theme from '../common/theme'
 
