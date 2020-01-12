@@ -50,6 +50,7 @@ const Form = ({ setCep, setData, setMessage, cep }) => {
         placeholder='02250-250'
         mask='99999-999'
         maskChar=''
+        data-testid='input-form'
       />
       <Button 
         width={['95%', '8em', '8em']} 

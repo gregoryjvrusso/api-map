@@ -21,6 +21,7 @@ exports[`Container Header component deve conseguir renderizar [snapshot] 1`] = `
     </label>
     <input
       className="sc-bwzfXH fRVSPy"
+      data-testid="input-form"
       id="cep"
       name="cep"
       onBlur={[Function]}
