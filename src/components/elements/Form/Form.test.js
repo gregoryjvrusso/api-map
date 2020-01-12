@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import renderer from 'react-test-renderer'
 import { render, fireEvent, waitForElement } from '@testing-library/react'
 import Form from './Form.js'
 
@@ -49,10 +48,9 @@ const ComponentMock = () => {
 
 describe('Form component', () => {
   it('deve conseguir renderizar [snapshot]', async () => {
-    const render = renderer
-      .create(<Form />)
-      .toJSON()
-    expect(render).toMatchSnapshot()
+    const { container } = render(<Form />)
+    expect(container.firstChild).toMatchSnapshot()
+
   })
   it('deve conseguir editar o input', async () => {
     const { getByTestId } = render(<ComponentMock />)

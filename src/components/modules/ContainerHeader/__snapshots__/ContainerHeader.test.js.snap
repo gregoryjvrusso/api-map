@@ -2,54 +2,35 @@
 
 exports[`Container Header component deve conseguir renderizar [snapshot] 1`] = `
 <div
-  className="sc-ifAKCX fNSzqa"
+  class="sc-ifAKCX fNSzqa"
 >
   <h1
-    className="sc-bxivhb dGpotq"
-    fontSize="1em"
+    class="sc-bxivhb dGpotq"
+    font-size="1em"
   >
     Consultar
   </h1>
-  <form
-    onSubmit={[Function]}
-  >
+  <form>
     <label
-      className="sc-bdVaJa FTQhB"
-      htmlFor="cep"
+      class="sc-bdVaJa FTQhB"
+      for="cep"
     >
       CEP
     </label>
     <input
-      className="sc-bwzfXH fRVSPy"
+      class="sc-bwzfXH fRVSPy"
       data-testid="input-form"
       id="cep"
       name="cep"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onMouseDown={[Function]}
-      onPaste={[Function]}
       placeholder="02250-250"
       type="text"
       value=""
-      width={
-        Array [
-          "70%",
-          "15em",
-          "15em",
-        ]
-      }
+      width="70%,15em,15em"
     />
     <button
-      className="sc-htpNat irRmst"
+      class="sc-htpNat irRmst"
       type="submit"
-      width={
-        Array [
-          "95%",
-          "8em",
-          "8em",
-        ]
-      }
+      width="95%,8em,8em"
     >
       Buscar
     </button>

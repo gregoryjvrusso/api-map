@@ -1,5 +1,5 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import ContainerMaps from './ContainerMaps.js'
 
 const mock = {
@@ -16,9 +16,7 @@ const mock = {
 
 describe('Container Maps component', () => {
   it('deve conseguir renderizar [snapshot]', async () => {
-    const render = renderer
-      .create(<ContainerMaps data={mock} />)
-      .toJSON()
-    expect(render).toMatchSnapshot()
+    const { container } = render(<ContainerMaps data={mock} />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

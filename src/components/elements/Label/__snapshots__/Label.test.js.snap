@@ -2,6 +2,6 @@
 
 exports[`Label component deve conseguir renderizar [snapshot] 1`] = `
 <label
-  className="sc-bdVaJa FTQhB"
+  class="sc-bdVaJa FTQhB"
 />
 `;

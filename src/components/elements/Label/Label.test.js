@@ -1,12 +1,10 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import Label from './Label.js'
 
 describe('Label component', () => {
   it('deve conseguir renderizar [snapshot]', async () => {
-    const render = renderer
-    .create(<Label />)
-    .toJSON();
-    expect(render).toMatchSnapshot()
+    const { container } = render(<Label />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

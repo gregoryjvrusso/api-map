@@ -2,20 +2,13 @@
 
 exports[`Input component deve conseguir renderizar [snapshot] 1`] = `
 <input
-  className="sc-bdVaJa fUlNye"
-  onBlur={[Function]}
-  onChange={[Function]}
-  onFocus={[Function]}
-  onMouseDown={[Function]}
-  onPaste={[Function]}
+  class="sc-bdVaJa fUlNye"
 />
 `;
 
 exports[`Input component deve conseguir renderizar [snapshot] com width de 80 px 1`] = `
 <input
-  className="sc-bdVaJa dfgRgk"
-  onBlur={[Function]}
-  onFocus={[Function]}
+  class="sc-bdVaJa dfgRgk"
   width="80px"
 />
 `;

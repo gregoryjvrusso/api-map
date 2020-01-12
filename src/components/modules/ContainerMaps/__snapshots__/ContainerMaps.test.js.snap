@@ -2,43 +2,42 @@
 
 exports[`Container Maps component deve conseguir renderizar [snapshot] 1`] = `
 <div
-  className="sc-htpNat gbqgVN"
+  class="sc-htpNat gbqgVN"
 >
   <div
-    className="sc-bxivhb cDFCAd"
+    class="sc-bxivhb cDFCAd"
   >
     <div
-      className="sc-bwzfXH wqKLy"
+      class="sc-bwzfXH wqKLy"
     >
       <p
-        className="sc-bdVaJa fTxPHd"
-        fontSize="2em"
-        fontWeight="bold"
+        class="sc-bdVaJa fTxPHd"
+        font-size="2em"
+        font-weight="bold"
       >
         Praça da Sé
       </p>
       <p
-        className="sc-bdVaJa ffYDP"
+        class="sc-bdVaJa ffYDP"
       >
         Sé
       </p>
       <p
-        className="sc-bdVaJa ffYDP"
+        class="sc-bdVaJa ffYDP"
       >
         São Paulo-SP
       </p>
       <p
-        className="sc-bdVaJa dqUOud"
+        class="sc-bdVaJa dqUOud"
       >
         01001-000
       </p>
     </div>
     <div
-      className="sc-ifAKCX OJlAs"
+      class="sc-ifAKCX OJlAs"
     >
       <svg
-        className="sc-EHOje iOXpbg"
-        onClick={[Function]}
+        class="sc-EHOje iOXpbg"
       >
         close.svg
       </svg>

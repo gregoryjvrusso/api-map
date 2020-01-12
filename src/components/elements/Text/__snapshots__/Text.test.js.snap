@@ -2,7 +2,7 @@
 
 exports[`Text component deve conseguir renderizar [snapshot] 1`] = `
 <p
-  className="sc-bdVaJa hCKHIO"
+  class="sc-bdVaJa hCKHIO"
 >
   Texto de teste
 </p>
@@ -10,7 +10,7 @@ exports[`Text component deve conseguir renderizar [snapshot] 1`] = `
 
 exports[`Text component deve conseguir renderizar [snapshot] como tag H1 1`] = `
 <h1
-  className="sc-bdVaJa hCKHIO"
+  class="sc-bdVaJa hCKHIO"
 >
   Texto de teste 2
 </h1>
@@ -18,8 +18,8 @@ exports[`Text component deve conseguir renderizar [snapshot] como tag H1 1`] = `
 
 exports[`Text component deve conseguir renderizar [snapshot] como tag H1 e fontSize 15px 1`] = `
 <h1
-  className="sc-bdVaJa dsgeoZ"
-  fontSize="15px"
+  class="sc-bdVaJa dsgeoZ"
+  font-size="15px"
 >
   Texto de teste
 </h1>
@@ -27,7 +27,7 @@ exports[`Text component deve conseguir renderizar [snapshot] como tag H1 e fontS
 
 exports[`Text component deve conseguir renderizar [snapshot] como warning 1`] = `
 <p
-  className="sc-bdVaJa irvhcf"
+  class="sc-bdVaJa irvhcf"
 >
   Texto de teste
 </p>

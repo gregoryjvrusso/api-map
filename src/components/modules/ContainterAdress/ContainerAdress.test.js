@@ -1,5 +1,5 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import ContainerAdress from './ContainerAdress.js'
 
 const mock = {
@@ -15,9 +15,7 @@ const mock = {
   }
 describe('Container Adress component', () => {
   it('deve conseguir renderizar [snapshot]', async () => {
-    const render = renderer
-    .create(<ContainerAdress data={mock} />)
-    .toJSON()
-    expect(render).toMatchSnapshot()
+    const { container } = render(<ContainerAdress data={mock} />)
+    expect(container.firstChild).toMatchSnapshot()
   })
 })

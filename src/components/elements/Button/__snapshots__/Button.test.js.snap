@@ -2,6 +2,6 @@
 
 exports[`Button component deve conseguir renderizar [snapshot] 1`] = `
 <button
-  className="sc-bdVaJa fPEQVc"
+  class="sc-bdVaJa fPEQVc"
 />
 `;
