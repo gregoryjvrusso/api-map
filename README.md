@@ -1,7 +1,5 @@
 # API MAP
 
-Desenvolvimento do teste do Gregory Russo para vaga de desenvolvedor front end na Magazine Luiza.
-
 ## Desenvolvimento
 
 Por conta do pouco tempo disponível para desenvolvimento, optou-se pela escolha do CRA (Create React App) para criação da estrutura do React.
